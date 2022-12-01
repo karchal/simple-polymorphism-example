@@ -1,19 +1,19 @@
-package org.example;
+package geometry;
 
 public class Rectangle implements Figure {
-    private double a;
-    private double b;
+    private final double a;
+    private final double b;
 
     public Rectangle(double a, double b) {
         this.a = a;
         this.b = b;
     }
 
-    public double computePerimeter(){
+    public double getPerimeter(){
         return 2 * a + 2 * b;
     }
 
-    public double computeArea(){
+    public double getArea(){
         return a * b;
     }
 

@@ -1,9 +1,9 @@
-package org.example;
+package geometry;
 
 public class Triangle implements Figure {
-    private double a;
-    private double b;
-    private double c;
+    private final double a;
+    private final double b;
+    private final double c;
 
     public Triangle(double a, double b, double c){
         this.a = a;
@@ -11,11 +11,11 @@ public class Triangle implements Figure {
         this.c = c;
     }
 
-    public double computePerimeter(){
+    public double getPerimeter(){
         return a + b + c;
     }
-    public double computeArea(){
-        double p = computePerimeter() / 2;
+    public double getArea(){
+        double p = getPerimeter() / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
